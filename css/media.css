@@ -9,6 +9,7 @@
   }
   .enter {    /*скрываем кнопку входа*/
     display: none;
+    cursor: pointer;
   }
   .burger {   /*открываем кнопку бургера*/
     display: block;
@@ -28,6 +29,7 @@
     height: 100vh;
     width: 100%;
     visibility: visible;
+    overflow-y: scroll;
     transform: translateX(0)
   }
   .stop-scroll {
@@ -53,10 +55,10 @@
     transition: all 0.3s ease-in-out;
     border-radius: 100px;
   }
-  .header__nav--button div:hover {
+  .header__nav--button div:focus {
     outline: 3px solid #D1A9F0;
   }
-  .header__nav--button div:focus {
+  .header__nav--button div:hover {
     outline-offset: 5px;
     outline: 2px solid #D1A9F0;
   }
@@ -128,16 +130,16 @@
   .ac .ac-panel .ac-text {
     width: 48%;
   }
-  .swiper__btn.events-swiper-button-next.events-swiper__btn.swiper-button-disabled {    
+  .swiper-btn.events-swiper-button-next.events-swiper-btn.swiper-button-disabled {    
     opacity: 1;
   }
-  .swiper__btn.events-swiper-button-next.events-swiper__btn.swiper-button-disabled .events-mobile__svg circle {
+  .swiper-btn.events-swiper-button-next.events-swiper-btn.swiper-button-disabled .events-mobile__svg circle {
     fill: #666666;;
   }
-  .swiper__btn.events-swiper-button-prev.events-swiper__btn.swiper-button-disabled {
+  .swiper-btn.events-swiper-button-prev.events-swiper-btn.swiper-button-disabled {
     opacity: 1;
   }
-  .swiper__btn.events-swiper-button-prev.events-swiper__btn.swiper-button-disabled .events-mobile__svg circle {
+  .swiper-btn.events-swiper-button-prev.events-swiper-btn.swiper-button-disabled .events-mobile__svg circle {
     fill: #666666;;
   }
   .events {
@@ -259,7 +261,7 @@
     max-width: 100%;
   }
   /*стилизация секции events*/
-  .events-swiper__btn {   /*скрываем кнопки слайдера*/
+  .events-swiper-btn {   /*скрываем кнопки слайдера*/
     display: none;
   }
   .events-pagination {

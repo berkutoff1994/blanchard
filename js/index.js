@@ -306,7 +306,7 @@ function init(){
         center: [55.758468, 37.601088],
         zoom: 15
     });
-
+    myMap.behaviors.disable('scrollZoom');
 let myPlacemark1 = new ymaps.Placemark([55.758468, 37.601088], {}, {
   iconLayout: 'default#image',
   iconImageClipRect: [[0,0], [0,0]],
