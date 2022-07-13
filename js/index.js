@@ -321,12 +321,12 @@ myMap.geoObjects.add(myPlacemark1);
 /*Burger*/
 {
   let burgerIcon =  document.querySelector('.burger-icon');
-  let burgerNav = document.querySelector('.header__nav')
+  let burgerNav = document.querySelector('.header-nav__wrapper')
   let menuLinks = document.querySelectorAll('.header__nav-item')
   
   burgerIcon.addEventListener('click', 
   function() {
-    burgerNav.classList.toggle('header__nav--active')
+    burgerNav.classList.toggle('header-nav__wrapper--active')
     burgerIcon.classList.toggle('burger-icon__active')
     document.body.classList.toggle("stop-scroll")
   });

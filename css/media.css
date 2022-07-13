@@ -1,15 +1,11 @@
-@media only screen and (max-width: 1515px) {
+@media only screen and (max-width: 1560px) {
   /*стилизация хедера*/
-  .header__nav {  /*скрываем навигацию*/
+  .header-nav__wrapper {  /*скрываем навигацию*/
     display: none;
     overflow-y: hidden;
     transform: translateX(-120%);
     transition: visibility 3s ease-in-out, transform 3s ease-in-out;
     visibility: hidden;
-  }
-  .enter {    /*скрываем кнопку входа*/
-    display: none;
-    cursor: pointer;
   }
   .burger {   /*открываем кнопку бургера*/
     display: block;
@@ -19,11 +15,12 @@
     display: none;
   }
   /*открытие бургера*/
-  .header__nav--active {
+  .header-nav__wrapper--active {
     display: block;
     position: absolute;
     left: 0;
     top: 0;
+    padding: 0 50px;
     padding-top: 100px;
     background-color: black;
     height: 100vh;
@@ -37,32 +34,30 @@
   }
   .header__nav-list {
     flex-direction: column;
-    height: 100vh;
-    padding: 0 50px;
   }
   .header__nav-item {
     margin-bottom: 40px;
   }
-  .header__nav--button {
+  .header-button {
     display: block;
     margin-top: 120px;
     text-align: start;
   }
-  .header__nav--button div {
+  .enter {
     display: inline-block;
     padding: 22px 88px;
     outline: 3px solid #D1A9F0;
     transition: all 0.3s ease-in-out;
     border-radius: 100px;
   }
-  .header__nav--button div:focus {
+  .enterfocus {
     outline: 3px solid #D1A9F0;
   }
-  .header__nav--button div:hover {
+  .enter:hover {
     outline-offset: 5px;
     outline: 2px solid #D1A9F0;
   }
-  .header__nav--button div:active {
+  .enter:active {
     background: var(--link--hover);
     outline-offset: 0;
     outline: 3px solid #D1A9F0;

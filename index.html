@@ -28,24 +28,26 @@
             </button>
           </div>
           <a class="header__logo"><img src="./img/logo.png" alt="Логотип Blanchard"></a>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item"><a href="#about-me">О нас</a></li>
-              <li class="header__nav-item"><a href="#gallery">Галерея</a></li>
-              <li class="header__nav-item"><a href="#catalog">Каталог</a></li>
-              <li class="header__nav-item"><a href="#events">События</a></li>
-              <li class="header__nav-item"><a href="#projects">Проекты</a></li>
-              <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
-              <li class="header__nav-item header__nav--button">
-                <button class="enter enter-button btn" aria-label="кнопка войти">
-                  <svg class="enter__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="enter__icon--path" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-                  </svg> 
-                  Войти
-                </button> 
-              </li>
-            </ul>
-          </nav>
+          <div class="header-nav__wrapper">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#about-me">О нас</a></li>
+                <li class="header__nav-item"><a href="#gallery">Галерея</a></li>
+                <li class="header__nav-item"><a href="#catalog">Каталог</a></li>
+                <li class="header__nav-item"><a href="#events">События</a></li>
+                <li class="header__nav-item"><a href="#projects">Проекты</a></li>
+                <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header-button">
+              <button class="enter enter-button btn" aria-label="кнопка войти">
+                <svg class="enter__icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="enter__icon--path" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                </svg> 
+                Войти
+              </button> 
+            </div>
+          </div>
           <div class="header-search">
             <button class="header-search__button btn" aria-label="кнопка поиска">
               <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
