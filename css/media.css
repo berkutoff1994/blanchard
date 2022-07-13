@@ -389,6 +389,9 @@
   .choices[data-type*=select-one] .choices__inner {
     padding-bottom: 13px;
   }
+  .choices__list[aria-expanded] .choices__list {
+    background-color: black;
+  }
   .gallery__checkbox-block {
     margin-bottom: 100px;
   }
